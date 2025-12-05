@@ -1,14 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manage Landing Page</title>
+
+    <!--Tab Icon-->
+    <link rel="icon" href="/images/favicon-32x32.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container text-center mt-5">
+    <nav class="navbar">
+      <div class="container d-flex p-3">
+        <img src="/images/logo.svg" class="navbar-logo" alt="" />
 
+        <button class="border-0 p-0 bg-transparent" id="burgerBtn">
+          <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
+        </button>
+        <button class="border-0 d-none bg-transparent" id="closeBtn">
+          <img src="/images/icon-close.svg" alt="" />
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center bg-body-secondary"
+          id="navBarMenu"
+        >
+          <ul class="navbar nav justify-content-center d-flex flex-column">
+            <li class="nav-item"><a href="" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Community</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Product</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="m-auto text-center">
+      <!-- <img src="/images/bg-tablet-pattern.svg" alt="" class="img-fluid w-100" id="imgPattern"> -->
+      <img
+        src="/images/illustration-intro.svg"
+        class="img-fluid d-block w-100 p-3"
+        alt=""
+      />
     </div>
+
+    <div class="text-center px-4">
+      <h1>Bring everyone together to build better products.</h1>
+      <p>
+        Manage makes it simple for software teams to plan day-to-day tasks while
+        keeping the larger team goals in view.
+      </p>
+      <button type="button" class="btn btn-danger rounded-5 px-4">
+        Get Started
+      </button>
+    </div>
+    <div class="container-fluid text-center my-5">
+      <h1>What’s different about Manage?</h1>
+      <p>
+        Manage provides all the functionality your team needs, without the
+        complexity. Our software is tailor-made for modern digital product
+        teams.
+      </p>
+      <div>
+        <span class="badge bg-dark-subtle">01</span>
+        <p class="badge bg-danger w-100s">Track company-wide progress</p>
+        <p>
+          See how your day-to-day tasks fit into the wider vision. Go from
+          tracking progress at the milestone level all the way done to the
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+      </div>
+
+      <div>
+        <span class="badge bg-dark-subtle">02</span>
+        <p class="badge bg-danger w-100s">Advanced built-in reports</p>
+        <p>
+          Set internal delivery estimates and track progress toward company
+          goals. Our customisable dashboard helps you build out the reports you
+          need to keep key stakeholders informed.
+        </p>
+      </div>
+
+      <div>
+        <span class="badge bg-dark-subtle">03</span>
+        <p class="badge bg-danger w-100s">Everything you need in one place</p>
+        <p>
+          Stop jumping from one service to another to communicate, store files,
+          track tasks and share documents. Manage offers an all-in-one team
+          productivity solution.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <h1>What they’ve said</h1>
+        <div>
+          <img src="/images/avatar-anisha.png" alt="" />
+          <h3>Anisha Li</h3>
+          <p>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+
+        <div>
+          <img src="/images/avatar-ali.png" alt="" />
+          <h3>Ali Bravo</h3>
+          <p>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+
+        <div>
+          <img src="/images/avatar-richard.png" alt="" />
+          <h3>Richard Watts</h3>
+          <p>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!””
+          </p>
+        </div>
+
+        <div>
+          <img src="/images/avatar-shanai.png" alt="" />
+          <h3>Shanai Gough</h3>
+          <p>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-danger rounded-5 px-4">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center p-5" id="orangeBg">
+      <h1 class="text-white">Simplify how your team works today.</h1>
+
+      <button type="button" class="btn btn-warning rounded-5 px-4">
+        Get Started
+      </button>
+    </div>
+
+    <footer>
+      <div class="">
+        <div class="text-center">
+          <input
+            type="text"
+            class="rounded-5 border-0 p-1 mt-5"
+            placeholder="Updates in your inbox"
+          />
+          <button class="rounded-4 border-0 px-2">Go</button>
+        </div>
+
+        <div class="col-6">
+          <ul class="navbar nav">
+            <li class=""><a href="" class="nav-link">Home</a></li>
+            <li class=""><a href="" class="nav-link">Pricing</a></li>
+            <li class=""><a href="" class="nav-link">Product</a></li>
+            <li class=""><a href="" class="nav-link">About us</a></li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="navbar nav">
+            <li class=""><a href="" class="nav-link">Careers</a></li>
+            <li class=""><a href="" class="nav-link">Community</a></li>
+            <li class=""><a href="" class="nav-link">Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center g-5 m-3">
+          <img
+            src="/images/icon-facebook.svg"
+            class="img-fluid social-icon"
+            alt=""
+          />
+          <img
+            src="/images/icon-youtube.svg"
+            class="img-fluid social-icon"
+            alt=""
+          />
+          <img
+            src="/images/icon-twitter.svg"
+            class="img-fluid social-icon"
+            alt=""
+          />
+          <img
+            src="/images/icon-pinterest.svg"
+            class="img-fluid social-icon"
+            alt=""
+          />
+          <img
+            src="/images/icon-instagram.svg"
+            class="img-fluid social-icon"
+            alt=""
+          />
+        </div>
+        <div>
+          <img src="/images/logo.svg" alt="" />
+        </div>
+        <p class="text-center">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

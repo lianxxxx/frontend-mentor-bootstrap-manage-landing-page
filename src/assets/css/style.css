@@ -1,0 +1,13 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif ;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+
+}
+#orangeBg{
+background-color:  hsl(12, 88%, 59%);
+}
+footer{
+    background-color: hsl(228, 39%, 23%);
+}

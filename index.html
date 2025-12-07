@@ -17,86 +17,116 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container d-flex p-3">
-        <img src="/images/logo.svg" class="navbar-logo" alt="" />
-
-        <button class="border-0 p-0 bg-transparent" id="burgerBtn">
-          <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
-        </button>
-        <button class="border-0 d-none bg-transparent" id="closeBtn">
-          <img src="/images/icon-close.svg" alt="" />
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-center bg-body-secondary"
-          id="navBarMenu"
-        >
-          <ul class="navbar nav justify-content-center d-flex flex-column">
-            <li class="nav-item"><a href="" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Community</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Product</a></li>
-          </ul>
+    <div class="hero-container">
+      <nav class="navbar">
+        <div class="container d-flex p-3 m-3">
+          <img src="/images/logo.svg" class="navbar-logo" alt="" />
+          <button class="border-0 p-0 bg-transparent" id="burgerBtn">
+            <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
+          </button>
+          <button class="border-0 d-none bg-transparent" id="closeBtn">
+            <img src="/images/icon-close.svg" alt="" />
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center bg-white"
+            id="navBarMenu"
+          >
+            <ul
+              class="navbar nav justify-content-center d-flex flex-column fw-bold text-dark"
+            >
+              <li class="nav-item p-1">
+                <a href="" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item p-1">
+                <a href="" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Community</a>
+              </li>
+              <li class="nav-item p-1">
+                <a href="" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item p-1">
+                <a href="" class="nav-link">Product</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="m-auto text-center position-relative w-100">
+        <img
+          src="/images/bg-tablet-pattern.svg"
+          alt=""
+          class="translate-middle-x table-pattern"
+        />
+        <img
+          src="/images/illustration-intro.svg"
+          class="position-relative img-fluid illustration-intro"
+          alt=""
+        />
       </div>
-    </nav>
-
-    <div class="m-auto text-center">
-      <!-- <img src="/images/bg-tablet-pattern.svg" alt="" class="img-fluid w-100" id="imgPattern"> -->
-      <img
-        src="/images/illustration-intro.svg"
-        class="img-fluid d-block w-100 p-3"
-        alt=""
-      />
     </div>
-
-    <div class="text-center px-4">
-      <h1>Bring everyone together to build better products.</h1>
-      <p>
+    <div class="position-relative text-center hero-container pb-5">
+      <h1 class="text-center fw-bold lh-sm px-4">
+        Bring everyone together to build better products.
+      </h1>
+      <p class="text-secondary lh-lg manage-description px-5 mx-1 text-justify">
         Manage makes it simple for software teams to plan day-to-day tasks while
         keeping the larger team goals in view.
       </p>
-      <button type="button" class="btn btn-danger rounded-5 px-4">
+      <img
+        src="/images/bg-tablet-pattern.svg"
+        class="table-pattern-small"
+        alt=""
+      />
+      <button type="button" class="btn btn-danger rounded-5 px-4 py-2 m-3 fs-6">
         Get Started
       </button>
-    </div>
-    <div class="container-fluid text-center my-5">
-      <h1>What’s different about Manage?</h1>
-      <p>
-        Manage provides all the functionality your team needs, without the
-        complexity. Our software is tailor-made for modern digital product
-        teams.
-      </p>
-      <div>
-        <span class="badge bg-dark-subtle">01</span>
-        <p class="badge bg-danger w-100s">Track company-wide progress</p>
-        <p>
-          See how your day-to-day tasks fit into the wider vision. Go from
-          tracking progress at the milestone level all the way done to the
-          smallest of details. Never lose sight of the bigger picture again.
-        </p>
-      </div>
 
-      <div>
-        <span class="badge bg-dark-subtle">02</span>
-        <p class="badge bg-danger w-100s">Advanced built-in reports</p>
-        <p>
-          Set internal delivery estimates and track progress toward company
-          goals. Our customisable dashboard helps you build out the reports you
-          need to keep key stakeholders informed.
-        </p>
-      </div>
-
-      <div>
-        <span class="badge bg-dark-subtle">03</span>
-        <p class="badge bg-danger w-100s">Everything you need in one place</p>
-        <p>
-          Stop jumping from one service to another to communicate, store files,
-          track tasks and share documents. Manage offers an all-in-one team
-          productivity solution.
-        </p>
+      <div class="mt-5 text-start">
+        <div>
+          <h1 class="fw-bold px-5 pb-3 pt-3 lh-base">
+            What’s different about Manage?
+          </h1>
+          <p class="text-secondary px-3 lh-base pb-5">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div>
+          <div class="position-relative">
+            <span class="number-badge fw-bold">01</span>
+            <p class="badge-title">Track company-wide progress</p>
+          </div>
+          <p class="text-secondary text-start mx-3 mb-5">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+        <div>
+          <div class="position-relative">
+            <span class="number-badge fw-bold">02</span>
+            <p class="badge-title">Advanced built-in reports</p>
+          </div>
+          <p class="text-secondary text-start mx-3 mb-5">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div>
+          <div class="position-relative">
+            <span class="number-badge fw-bold">03</span>
+            <p class="badge-title">Everything you need in one place</p>
+          </div>
+          <p class="text-secondary text-start mx-3 mb-5">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -112,7 +142,6 @@
             motivated.”
           </p>
         </div>
-
         <div>
           <img src="/images/avatar-ali.png" alt="" />
           <h3>Ali Bravo</h3>
@@ -122,7 +151,6 @@
             much more focused.”
           </p>
         </div>
-
         <div>
           <img src="/images/avatar-richard.png" alt="" />
           <h3>Richard Watts</h3>
@@ -132,7 +160,6 @@
             talk to!””
           </p>
         </div>
-
         <div>
           <img src="/images/avatar-shanai.png" alt="" />
           <h3>Shanai Gough</h3>
@@ -142,21 +169,17 @@
             being intrusive.”
           </p>
         </div>
-
         <button type="button" class="btn btn-danger rounded-5 px-4">
           Get Started
         </button>
       </div>
     </div>
-
     <div class="container-fluid text-center p-5" id="orangeBg">
       <h1 class="text-white">Simplify how your team works today.</h1>
-
       <button type="button" class="btn btn-warning rounded-5 px-4">
         Get Started
       </button>
     </div>
-
     <footer>
       <div class="">
         <div class="text-center">
@@ -167,7 +190,6 @@
           />
           <button class="rounded-4 border-0 px-2">Go</button>
         </div>
-
         <div class="col-6">
           <ul class="navbar nav">
             <li class=""><a href="" class="nav-link">Home</a></li>
@@ -183,7 +205,6 @@
             <li class=""><a href="" class="nav-link">Policy</a></li>
           </ul>
         </div>
-
         <div class="d-flex justify-content-center g-5 m-3">
           <img
             src="/images/icon-facebook.svg"
@@ -217,6 +238,7 @@
         <p class="text-center">Copyright 2020. All Rights Reserved</p>
       </div>
     </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

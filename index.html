@@ -35,19 +35,19 @@
               class="navbar nav justify-content-center d-flex flex-column fw-bold text-dark"
             >
               <li class="nav-item p-1">
+                <a href="" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item p-1">
+                <a href="" class="nav-link">Product</a>
+              </li>
+              <li class="nav-item">
                 <a href="" class="nav-link">About us</a>
               </li>
               <li class="nav-item p-1">
                 <a href="" class="nav-link">Careers</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item p-1">
                 <a href="" class="nav-link">Community</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Pricing</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Product</a>
               </li>
             </ul>
           </div>
@@ -67,10 +67,10 @@
       </div>
     </div>
     <div class="position-relative text-center hero-container pb-5">
-      <h1 class="text-center fw-bold lh-sm px-4">
+      <h1 class="text-center fw-bold lh-sm px-4 home-title">
         Bring everyone together to build better products.
       </h1>
-      <p class="text-secondary lh-lg manage-description px-5 mx-1 text-justify">
+      <p class="text-secondary lh-lg manage-description px-4 mx-1 text-justify">
         Manage makes it simple for software teams to plan day-to-day tasks while
         keeping the larger team goals in view.
       </p>
@@ -79,16 +79,16 @@
         class="table-pattern-small"
         alt=""
       />
-      <button type="button" class="btn btn-danger rounded-5 px-4 py-2 m-3 fs-6">
+      <button type="button" class="btn btn-danger rounded-5 px-4 m-3 fs-6">
         Get Started
       </button>
 
       <div class="mt-5 text-start">
         <div>
-          <h1 class="fw-bold px-5 pb-3 pt-3 lh-base">
+          <h1 class="fw-bold px-5 pb-3 pt-5 lh-base text-center">
             What’s different about Manage?
           </h1>
-          <p class="text-secondary px-3 lh-base pb-5">
+          <p class="text-secondary px-4 lh-base pb-5">
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
@@ -121,7 +121,7 @@
             <span class="number-badge fw-bold">03</span>
             <p class="badge-title">Everything you need in one place</p>
           </div>
-          <p class="text-secondary text-start mx-3 mb-5">
+          <p class="text-secondary text-start mx-3 mb-3">
             Stop jumping from one service to another to communicate, store
             files, track tasks and share documents. Manage offers an all-in-one
             team productivity solution.
@@ -130,53 +130,120 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="container">
-        <h1>What they’ve said</h1>
-        <div>
-          <img src="/images/avatar-anisha.png" alt="" />
-          <h3>Anisha Li</h3>
-          <p>
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
-          </p>
+    <div
+      id="testimonialCarousel"
+      class="carousel slide text-center mx-3"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <h1 class="title-testimonial">What they've said</h1>
+      <div class="carousel-inner">
+        <!-- Card 1 -->
+
+        <div class="carousel-item">
+          <div class="card px-3 pb-5 mx-auto">
+            <img
+              src="/images/avatar-anisha.png"
+              class="img-fluid img-testimonial mx-auto d-block"
+            />
+            <h6 class="fw-bold pb-2">Anisha Li</h6>
+            <p class="text-secondary">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
         </div>
-        <div>
-          <img src="/images/avatar-ali.png" alt="" />
-          <h3>Ali Bravo</h3>
-          <p>
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
-          </p>
+
+        <!-- Card 2 -->
+        <div class="carousel-item active">
+          <div class="card px-3 pb-5 mx-auto">
+            <img
+              src="/images/avatar-ali.png"
+              class="img-fluid img-testimonial mx-auto d-block"
+            />
+            <h6 class="fw-bold pb-2">Ali Bravo</h6>
+            <p class="text-secondary">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
         </div>
-        <div>
-          <img src="/images/avatar-richard.png" alt="" />
-          <h3>Richard Watts</h3>
-          <p>
-            “Manage allows us to provide structure and process. It keeps us
-            organized and focused. I can’t stop recommending them to everyone I
-            talk to!””
-          </p>
+        <!-- Card 3 -->
+        <div class="carousel-item">
+          <div class="card px-3 pb-5 mx-auto">
+            <img
+              src="/images/avatar-richard.png"
+              class="img-fluid img-testimonial mx-auto d-block"
+            />
+            <h6 class="fw-bold pb-2">Richard Watts</h6>
+            <p class="text-secondary">
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
+            </p>
+          </div>
         </div>
-        <div>
-          <img src="/images/avatar-shanai.png" alt="" />
-          <h3>Shanai Gough</h3>
-          <p>
-            “Their software allows us to track, manage and collaborate on our
-            projects from anywhere. It keeps the whole team in-sync without
-            being intrusive.”
-          </p>
+
+        <!-- Card 4 -->
+        <div class="carousel-item">
+          <div class="card px-3 pb-5 mx-auto">
+            <img
+              src="/images/avatar-shanai.png"
+              class="img-fluid img-testimonial mx-auto d-block"
+            />
+            <h6 class="fw-bold pb-2">Shanai Gough</h6>
+            <p class="text-secondary">
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </div>
         </div>
-        <button type="button" class="btn btn-danger rounded-5 px-4">
-          Get Started
-        </button>
       </div>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide-to="3"
+        ></button>
+      </div>
+      <button
+        type="button"
+        class="btn btn-danger rounded-5 px-4 py-2 mt-3 mb-5 fs-6"
+      >
+        Get Started
+      </button>
     </div>
-    <div class="container-fluid text-center p-5" id="orangeBg">
-      <h1 class="text-white">Simplify how your team works today.</h1>
-      <button type="button" class="btn btn-warning rounded-5 px-4">
+
+    <div class="container-fluid text-center" id="orangeBg">
+      <img
+        src="/images/bg-simplify-section-mobile.svg"
+        class="img-fluid bg-simplify-section-mobile"
+        alt=""
+      />
+      <h1 class="fw-medium mt-4 lh-sm">Simplify how your team works today.</h1>
+      <button
+        type="button"
+        class="btn btn-white rounded-5 px-4 mb-4 mt-3 py-2 fs-6 fw-bold"
+      >
         Get Started
       </button>
     </div>
@@ -185,27 +252,43 @@
         <div class="text-center">
           <input
             type="text"
-            class="rounded-5 border-0 p-1 mt-5"
-            placeholder="Updates in your inbox"
+            class="rounded-5 border-0 py-2 px-4 mt-5 border-0 placeholder-design"
+            placeholder="Updates in your inbox...."
           />
-          <button class="rounded-4 border-0 px-2">Go</button>
+          <button class="rounded-5 border-0 go-btn fs-6 text-white">GO</button>
         </div>
-        <div class="col-6">
-          <ul class="navbar nav">
-            <li class=""><a href="" class="nav-link">Home</a></li>
-            <li class=""><a href="" class="nav-link">Pricing</a></li>
-            <li class=""><a href="" class="nav-link">Product</a></li>
-            <li class=""><a href="" class="nav-link">About us</a></li>
-          </ul>
+        <div class="row justify-content-center m-4">
+          <div class="col-6">
+            <ul class="navbar nav flex-column">
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Home</a>
+              </li>
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Pricing</a>
+              </li>
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Product</a>
+              </li>
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="navbar nav flex-column">
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Careers</a>
+              </li>
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Community</a>
+              </li>
+              <li class="">
+                <a href="" class="nav-link text-white fw-light">Policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6">
-          <ul class="navbar nav">
-            <li class=""><a href="" class="nav-link">Careers</a></li>
-            <li class=""><a href="" class="nav-link">Community</a></li>
-            <li class=""><a href="" class="nav-link">Policy</a></li>
-          </ul>
-        </div>
-        <div class="d-flex justify-content-center g-5 m-3">
+        <div class="d-flex justify-content-center gap-4 m-3">
           <img
             src="/images/icon-facebook.svg"
             class="img-fluid social-icon"
@@ -232,10 +315,12 @@
             alt=""
           />
         </div>
-        <div>
-          <img src="/images/logo.svg" alt="" />
+        <div class="text-center m-5">
+          <img src="/images/logo.svg" alt="" fill="white" class="footer-logo" />
         </div>
-        <p class="text-center">Copyright 2020. All Rights Reserved</p>
+        <p class="text-secondary text-center fs-6 pb-4">
+          Copyright 2020. All Rights Reserved
+        </p>
       </div>
     </footer>
 

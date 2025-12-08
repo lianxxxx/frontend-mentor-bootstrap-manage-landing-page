@@ -1,10 +1,7 @@
 *{
     font-family: 'Be Vietnam Pro', sans-serif ;
 }
-html,body{
-    background-color: hsl(0, 0%, 98%);
 
-}
 .hero-container{
     overflow-x: hidden;
     position: relative;
@@ -13,9 +10,16 @@ html,body{
 }
 #orangeBg{
 background-color:  hsl(12, 88%, 59%);
+padding:70px;
+position: relative;
+}
+#orangeBg h1{
+color:  white;
+font-size: 35px;
+z-index: 2;
 }
 footer{
-    background-color: hsl(228, 39%, 23%);
+    background-color: hsl(233, 12%, 13%);
 }
 #navBarMenu {
     z-index:3;
@@ -52,8 +56,8 @@ ul a{
 
 .table-pattern-small {
     position: absolute;
-    top: 75px;
-    left: 62%;
+    top: 90px;
+    left: 61%;
     width: 80%;
     z-index: 1!important;
 
@@ -67,15 +71,21 @@ ul a{
 width: 40%;
 }
 .fs-6{
-  font-size: 10px!important;
+  font-size: 12px!important;
 }
 
 .btn-danger{
 background-color: hsl(12, 88%, 59%);
 border: none;
 box-shadow: 0 4px 10px hsla(12, 88%, 59%, 0.4);
- z-index: 2;
-   position: relative;
+z-index: 2;
+position: relative;
+}
+.btn-white{
+background-color: white;
+border: none;
+color:hsl(12, 88%, 59%);
+
 }
 .manage-description{
    z-index: 2;
@@ -97,13 +107,83 @@ box-shadow: 0 4px 10px hsla(12, 88%, 59%, 0.4);
   
 }
 .badge-title{
-     background-color: hsla(12, 88%, 59%, 0.155);
-     color:hsl(233, 12%, 13%);
-     display:inline-block;
+    background-color: hsla(12, 88%, 59%, 0.155);
+    color:hsl(233, 12%, 13%);
+    display:inline-block;
     padding: 7px 30px;
     z-index: 2;
     font-weight: 600;
     font-size: 15px;
     min-width: 309px;
 
+}
+.img-testimonial{
+position: relative;
+    width:20%;
+    top:-30px;
+    margin-bottom:-5px;
+}
+
+.card{
+    background-color: hsl(0, 0%, 98%);
+    border:none ;
+    color:hsl(228, 39%, 23%);
+    margin-top: 90px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  border:2px solid #ff4500;
+
+}
+
+.carousel-indicators .active {
+  background-color: #ff4500; 
+}
+.carousel-indicators {
+  position: static !important; 
+  margin-top: 30px;           
+}
+.bg-simplify-section-mobile{
+    position: absolute;
+    left: 0px;
+  top: 40px;
+  z-index: 1;
+ 
+}
+.placeholder-design::placeholder{
+    font-size: 13px;
+    padding: 10px;
+}
+.go-btn{
+  background-color: #ff4500;  
+  padding: 12px 25px; 
+  margin-left: 5px;
+}
+
+footer ul a{
+    font-size:15px!important;
+    font-weight: 200 !important;
+}
+
+.social-icon{
+    width:9%;
+    margin:5px;
+}
+.footer-logo{
+  filter: invert(100%) brightness(200%) saturate(0%);
+}
+
+.home-title{
+    font-size:35px!important;
+    color:hsl(228, 39%, 23%);
+}
+.title-testimonial{
+    font-size: 30px!important;
+    color:hsl(228, 39%, 23%);
+    font-weight:bolder;
+    margin-bottom: -5px;;
 }

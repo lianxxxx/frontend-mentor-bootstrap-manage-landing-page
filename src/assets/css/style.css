@@ -34,7 +34,7 @@ footer{
 }
 ul a{
     color: black !important;
-
+font-size: 16px;
 }
 
 
@@ -186,4 +186,36 @@ footer ul a{
     color:hsl(228, 39%, 23%);
     font-weight:bolder;
     margin-bottom: -5px;;
+}
+
+@media (min-width: 992px) { 
+    .navbar-logo {
+        width: 12% !important;
+    }
+
+   #navBarMenu {
+        position: static;          /* normal flow */
+        top: auto;                 /* reset top */
+        width: auto;               /* full width of navbar container */
+        padding: 0;                /* remove extra padding */
+        background-color: transparent !important;  /* remove white bg */
+        box-shadow: none;          /* remove shadow */
+        backdrop-filter: none;     /* remove blur */
+        font-size: 11px !important;
+      
+    }
+    #navBarMenu {
+    position: static;        
+    width: auto;           
+    background-color: transparent !important;
+    padding: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+ul li a {
+    color:hsl(228, 39%, 23%);
+
+}
+
 }

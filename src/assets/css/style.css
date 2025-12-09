@@ -48,9 +48,9 @@ font-size: 16px;
 .table-pattern {
   position: absolute;
   top: -180px;
-  left: 70%;
-  z-index: 1;
-  width: 110%;
+  left: 15%;
+  z-index: -1;
+  width: 120%;
  
 }
 
@@ -64,7 +64,7 @@ font-size: 16px;
 }
 .illustration-intro {
   z-index: 2;
-   width: 90%;
+   width: 100%;
 }
 
 .navbar-logo{
@@ -194,13 +194,13 @@ footer ul a{
     }
 
    #navBarMenu {
-        position: static;          /* normal flow */
-        top: auto;                 /* reset top */
-        width: auto;               /* full width of navbar container */
-        padding: 0;                /* remove extra padding */
-        background-color: transparent !important;  /* remove white bg */
-        box-shadow: none;          /* remove shadow */
-        backdrop-filter: none;     /* remove blur */
+        position: static;          
+        top: auto;                
+        width: auto;              
+        padding: 0;                
+        background-color: transparent !important;  
+        box-shadow: none;        
+        backdrop-filter: none;     
         font-size: 11px !important;
       
     }
@@ -214,8 +214,53 @@ footer ul a{
   }
 
 ul li a {
+ font-weight: 500!important;
+font-size:12px!important;
+}
+
+
+.illustration-intro {
+  z-index: 2;
+   width: 90%;
+   margin-top: -50px;
+}
+
+.home-title{
+    font-size:45px!important;
     color:hsl(228, 39%, 23%);
+}
+.manage-description {
+  max-width: 400px;
 
 }
 
+
+.table-pattern {
+  position: absolute;
+  top: -310px;
+  left: 0%;
+  z-index: -1;
+  width: 120%;
+ 
 }
+
+
+}
+
+
+@media (min-width: 1200px) { 
+.illustration-intro {
+  z-index: 2;
+   width: 90%;
+
+}
+
+.home-title{
+    font-size:55px!important;
+   
+}
+.manage-description {
+  max-width: 500px;
+
+}
+    }

@@ -4,23 +4,25 @@
 
 .hero-container{
     overflow-x: hidden;
-    position: relative;
-   
-       
+    position: relative;      
 }
+
 #orangeBg{
 background-color:  hsl(12, 88%, 59%);
 padding:70px;
 position: relative;
 }
+
 #orangeBg h1{
-color:  white;
+color:  white;  
 font-size: 35px;
 z-index: 2;
 }
+
 footer{
     background-color: hsl(233, 12%, 13%);
 }
+
 #navBarMenu {
     z-index:3;
     position: absolute; 
@@ -87,7 +89,7 @@ position: relative;
 background-color: white;
 border: none;
 color:hsl(12, 88%, 59%);
-
+cursor: pointer!important;
 }
 .manage-description, .title-manage{
    z-index: 2;
@@ -112,13 +114,16 @@ color:hsl(12, 88%, 59%);
     background-color: hsla(12, 88%, 59%, 0.155);
     color:hsl(233, 12%, 13%);
     display:inline-block;
-    padding: 7px 30px;
     z-index: 2;
     font-weight: 600;
     font-size: 15px;
     min-width: 309px;
- margin-left: 5px !important;;
-}
+    margin-left: 5px !important;
+    padding: 8px 25px 8px 35px;
+    flex: 1;
+    }
+
+
 .img-testimonial{
 position: relative;
     width:20%;
@@ -138,8 +143,11 @@ position: relative;
 .bg-simplify-section-mobile{
     position: absolute;
     left: 0px;
-  top: 40px;
-  z-index: 1;
+    top: 40px;
+    z-index: 1;
+    max-height: 250px; 
+
+
  
 }
 .placeholder-design::placeholder{
@@ -153,7 +161,7 @@ position: relative;
 }
 
 footer ul a{
-    font-size:15px!important;
+    font-size:16px!important;
     font-weight: 200 !important;
 }
 
@@ -192,9 +200,52 @@ footer ul a{
     height: max(25vh, 270px);
     padding: 20px;
     border-radius: 8px;
- z-index: 2 !important;
+    z-index: 2 !important;
     animation: none !important;
      position: relative;
+}
+
+  .features-col {
+    padding-right: 0 !important;
+    margin: 0,  !important;
+  }
+   
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.number-badge {
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .indicators input {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    accent-color: red;
+  } 
+
+  .social-icon{
+    cursor: pointer;
+  }
+
+
+  .placeholder-design.error {
+  outline: 2px solid hsl(12, 88%, 59%);
 }
 
 /* FOR 992PX */
@@ -225,15 +276,15 @@ footer ul a{
 
 ul li a {
  font-weight: 500!important;
-font-size:12px!important;
+font-size:14px!important;
 }
 
 
 .illustration-intro {
   z-index: 2;
-   width: 80%;
+   width: 100%;
    margin-top: -50px;
-margin-right:100px;
+
 }
 
 .home-title{
@@ -333,21 +384,24 @@ text-align: left;
 background-color:  hsl(12, 88%, 59%);
 padding:40px;
 position: relative;
+ overflow: hidden;
 }
 
-bg-simplify-section-desktop{
+.bg-simplify-section-desktop{
  object-fit: cover!important; 
  z-index: 0;
+ 
+}
+.copyright{
+margin-top: -50px!important;
 }
 }
 
 
+
+/* for 1200px */
 @media (min-width: 1200px) { 
-.illustration-intro {
-  z-index: 2;
-   width: 95%;
 
-}
 .table-pattern {
   position: absolute;
   top: -340px;
@@ -363,6 +417,9 @@ bg-simplify-section-desktop{
 .manage-description {
   max-width: 500px!important;
 
+}
+.bg-simplify-section-desktop{
+  object-fit: cover!important; 
 }
 
 
@@ -383,51 +440,21 @@ bg-simplify-section-desktop{
     scroll-snap-align: start;
   }
 
-  .indicators {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .indicators input {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    accent-color: red;
-  }
-
-
-}
-@media (max-width: 991px) {
-  .features-col {
-    padding-right: 0 !important;
-    margin: 0,  !important;
-  }
-    .badge-title {
-    width: calc(100% - 40px); /* space for number badge */
-    margin-left: auto;
-    border-radius: 0;
-  }
-
 }
 
-.feature-header {
-  display: flex;
-  align-items: center;
-  position: relative;
+
+/* Active */
+
+footer .nav-link:hover {
+  color: hsl(12, 88%, 59%) !important;
+}
+.social-icon:hover {
+  filter: brightness(0) saturate(100%)
+          invert(48%) sepia(90%)
+          saturate(550%) hue-rotate(340deg)
+          brightness(95%) contrast(95%);
 }
 
-.number-badge {
-  background-color: hsl(12, 88%, 59%);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 20px;
-  z-index: 2;
-}
-
-.badge-title {
-  margin-left: -15px; /* overlap effect */
-  padding: 8px 25px 8px 35px;
-  flex: 1;
+nav li a:hover{
+color: gray !important;;
 }

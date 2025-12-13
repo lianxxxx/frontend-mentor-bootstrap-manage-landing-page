@@ -28,7 +28,7 @@
       );
  
 
-
+//for image slider 
 
 const cards = document.querySelectorAll('.testimonial .card');
 const radios = document.querySelectorAll('.indicators input');
@@ -73,7 +73,7 @@ document.querySelector('.testimonial').addEventListener('scroll', () => {
   startAutoSlide();
 });
 
-// ---- NEW: Only auto-slide when slider is visible ----
+
 const slider = document.querySelector('.testimonial');
 
 const observer = new IntersectionObserver((entries) => {
@@ -87,4 +87,28 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(slider);
+
+
+
+//for validation of email
+  const emailInput = document.getElementById("emailInput");
+  const goBtn = document.getElementById("goBtn");
+  const emailError = document.getElementById("emailError");
+
+  goBtn.addEventListener("click", function () {
+    const emailValue = emailInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailValue)) {
+      emailError.classList.remove("d-none");
+      emailInput.classList.add("error");
+    } else {
+      emailError.classList.add("d-none");
+      emailInput.classList.remove("error");
+
+      // Optional success action
+      alert("Email submitted successfully!");
+      emailInput.value = "";
+    }
+  });
 

@@ -17,8 +17,8 @@
     />
   </head>
   <body>
-    <div class="hero-container px-xl-0">
-      <nav class="navbar navbar-expand-lg my-lg-2 mx-lg-5 m-4 py-2">
+    <div class="hero-container">
+      <nav class="navbar navbar-expand-lg my-lg-4 px-lg-5 m-4 py-2">
         <img src="/images/logo.svg" class="navbar-logo" alt="" />
         <button class="border-0 p-0 bg-transparent d-lg-none" id="burgerBtn">
           <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
@@ -63,7 +63,7 @@
         <div class="container mx-lg-5 my-lg-4">
           <div class="row align-items-center px-3 py-3 py-xl-5">
             <div
-              class="col-12 col-lg-6 text-center text-lg-start hero-container pb-5 order-2 order-lg-1 py-md-5"
+              class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pb-5 order-2 order-lg-1 py-md-5"
             >
               <h1 class="fw-bold lh-1 px-2 home-title">
                 Bring everyone together to build better products.
@@ -82,9 +82,7 @@
               </button>
             </div>
 
-            <div
-              class="col-12 col-lg-6 position-relative text-center order-1 order-lg-2"
-            >
+            <div class="col-12 col-lg-6 position-relative order-1 order-lg-2">
               <img
                 src="/images/bg-tablet-pattern.svg"
                 class="table-pattern"
@@ -118,7 +116,7 @@
               </p>
             </div>
 
-            <div class="col-12 col-lg-6 py-sm-5 p-lg-0 features-col my-lg-0">
+            <div class="col-12 col-lg-6 py-sm-5 px-lg-5 features-col my-lg-0">
               <div class="mb-5 m-lg-0">
                 <div class="position-relative feature-header">
                   <span class="number-badge fw-bold">01</span>
@@ -187,7 +185,7 @@
         <div class="testimonial">
           <!-- Card 1 -->
 
-          <div class="card px-3 pb-5 mx-auto profile primeiro" id="card1">
+          <div class="card px-3 pb-5 mx-auto profile" id="card1">
             <img
               src="/images/avatar-anisha.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -202,7 +200,7 @@
 
           <!-- Card 2 -->
 
-          <div class="card px-3 pb-5 mx-auto profile ali" id="card2">
+          <div class="card px-3 pb-5 mx-auto profile" id="card2">
             <img
               src="/images/avatar-ali.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -232,7 +230,7 @@
 
           <!-- Card 4 -->
 
-          <div class="card px-3 pb-5 mx-auto profile shanai" id="card4">
+          <div class="card px-3 pb-5 mx-auto profile" id="card4">
             <img
               src="/images/avatar-shanai.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -260,7 +258,7 @@
 
           <!-- Duplicate Card 2 -->
 
-          <div class="card px-3 pb-5 mx-auto profile ali duplicate">
+          <div class="card px-3 pb-5 mx-auto profile duplicate">
             <img
               src="/images/avatar-ali.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -275,7 +273,7 @@
 
           <!-- Duplicate Card 3 -->
 
-          <div class="card px-3 pb-5 mx-auto profile richard duplicate">
+          <div class="card px-3 pb-5 mx-auto profile duplicate">
             <img
               src="/images/avatar-richard.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -288,7 +286,7 @@
             </p>
           </div>
           <!-- Duplicate Card 4 -->
-          <div class="card px-3 pb-5 mx-auto profile shanai duplicate">
+          <div class="card px-3 pb-5 mx-auto profile duplicate">
             <img
               src="/images/avatar-shanai.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -327,7 +325,7 @@
       <img
         src="/images/bg-simplify-section-desktop.svg"
         alt=""
-        class="bg-simplify-section-desktop position-absolute top-0 start-0 h-100 w-100 d-none d-lg-block"
+        class="bg-simplify-section-desktop position-absolute w-100 h-100 d-none d-lg-block"
       />
 
       <h1 class="fw-medium mt-4 lh-sm simplify ms-lg-3">
@@ -342,83 +340,125 @@
         </button>
       </div>
     </div>
-    <footer>
-      <div class="">
-        <div class="text-center">
-          <input
-            type="text"
-            class="rounded-5 border-0 py-2 px-4 mt-5 border-0 placeholder-design"
-            placeholder="Updates in your inbox...."
-          />
-          <button class="rounded-5 border-0 go-btn fs-6 text-white">GO</button>
-        </div>
-        <div class="row justify-content-center m-4">
-          <div class="col-6">
-            <ul class="navbar nav flex-column">
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Home</a>
+    <footer class="bg-dark text-white">
+      <div class="container py-5 p-lg-5">
+        <div class="row text-center text-lg-start justify-content-between">
+          <!-- Newsletter Signup -->
+          <div
+            class="col-12 col-lg-3 d-flex flex-column justify-content-start order-1 order-lg-4 mb-4"
+          >
+            <div
+              class="d-flex justify-content-center justify-content-lg-end mb-3"
+            >
+              <input
+                type="text"
+                class="rounded-5 border-0 py-2 px-4 me-2 placeholder-design"
+                placeholder="Updates in your inbox...."
+              />
+              <button
+                class="rounded-5 border-0 go-btn text-white px-4"
+                id="goBtn"
+              >
+                GO
+              </button>
+            </div>
+            <!-- Error message -->
+            <small id="emailError" class="text-danger mt-1 d-none">
+              Please enter a valid email address
+            </small>
+          </div>
+
+          <!-- Quick Links -->
+          <div
+            class="col-6 col-lg-3 mb-4 order-2 order-lg-2 d-flex justify-content-center justify-content-lg-start"
+          >
+            <ul class="nav flex-column text-start">
+              <li><a href="#" class="nav-link text-white fw-light">Home</a></li>
+              <li>
+                <a href="#" class="nav-link text-white fw-light">Pricing</a>
               </li>
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Pricing</a>
+              <li>
+                <a href="#" class="nav-link text-white fw-light">Product</a>
               </li>
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Product</a>
-              </li>
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">About us</a>
+              <li>
+                <a href="#" class="nav-link text-white fw-light">About us</a>
               </li>
             </ul>
           </div>
-          <div class="col-6">
-            <ul class="navbar nav flex-column">
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Careers</a>
+
+          <!-- More Links -->
+          <div
+            class="col-6 col-lg-3 mb-4 order-3 order-lg-3 d-flex justify-content-center justify-content-lg-start"
+          >
+            <ul class="nav flex-column text-start">
+              <li>
+                <a href="#" class="nav-link text-white fw-light">Careers</a>
               </li>
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Community</a>
+              <li>
+                <a href="#" class="nav-link text-white fw-light">Community</a>
               </li>
-              <li class="">
-                <a href="" class="nav-link text-white fw-light">Policy</a>
+              <li>
+                <a href="#" class="nav-link text-white fw-light">Policy</a>
               </li>
             </ul>
           </div>
+
+          <!-- Logo & Social Icons -->
+          <div
+            class="col-12 col-lg-3 mb-4 d-flex flex-column-reverse flex-lg-column justify-content-between order-4 order-lg-1"
+          >
+            <!-- Logo -->
+            <img
+              src="/images/logo.svg"
+              class="footer-logo mb-3 img-fluid w-50 mx-auto m-5 m-lg-0"
+              alt="Logo"
+            />
+
+            <!-- Social Icons -->
+            <div
+              class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3 mt-lg-0"
+            >
+              <img
+                src="/images/icon-facebook.svg"
+                class="social-icon"
+                alt="Facebook"
+              />
+              <img
+                src="/images/icon-youtube.svg"
+                class="social-icon"
+                alt="YouTube"
+              />
+              <img
+                src="/images/icon-twitter.svg"
+                class="social-icon"
+                alt="Twitter"
+              />
+              <img
+                src="/images/icon-pinterest.svg"
+                class="social-icon"
+                alt="Pinterest"
+              />
+              <img
+                src="/images/icon-instagram.svg"
+                class="social-icon"
+                alt="Instagram"
+              />
+            </div>
+          </div>
+
+          <!-- COPYRIGHT -->
+          <div
+            class="col-12 text-center text-lg-end order-5 order-lg-5 mt-lg-2 copyright"
+          >
+            <p class="text-secondary fs-6 mb-0">
+              Copyright 2020. All Rights Reserved
+            </p>
+          </div>
         </div>
-        <div class="d-flex justify-content-center gap-4 m-3">
-          <img
-            src="/images/icon-facebook.svg"
-            class="img-fluid social-icon"
-            alt=""
-          />
-          <img
-            src="/images/icon-youtube.svg"
-            class="img-fluid social-icon"
-            alt=""
-          />
-          <img
-            src="/images/icon-twitter.svg"
-            class="img-fluid social-icon"
-            alt=""
-          />
-          <img
-            src="/images/icon-pinterest.svg"
-            class="img-fluid social-icon"
-            alt=""
-          />
-          <img
-            src="/images/icon-instagram.svg"
-            class="img-fluid social-icon"
-            alt=""
-          />
-        </div>
-        <div class="text-center m-5">
-          <img src="/images/logo.svg" alt="" fill="white" class="footer-logo" />
-        </div>
-        <p class="text-secondary text-center fs-6 pb-4">
-          Copyright 2020. All Rights Reserved
-        </p>
       </div>
     </footer>
 
+    <!-- Javascript -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

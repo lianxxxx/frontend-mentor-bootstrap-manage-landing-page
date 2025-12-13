@@ -29,17 +29,62 @@
  
 
 
-      document.getElementById("radio1").checked = true
-    let cont = 1
-setInterval(() => {
-    nextImg()
-}, 5000)
 
-function nextImg() {
-    cont++
+const cards = document.querySelectorAll('.testimonial .card');
+const radios = document.querySelectorAll('.indicators input');
+let currentIndex = 0;
+let autoSlide = null;
 
-    if(cont > 4) {
-        cont = 1
-    }
-    document.getElementById("radio" + cont).checked = true
+// Move to specific card
+function goToCard(index) {
+  currentIndex = index;
+  cards[index].scrollIntoView({ behavior: 'smooth', inline: 'start' });
+  radios[index].checked = true;
 }
+
+// Start auto slide
+function startAutoSlide() {
+  if (!autoSlide) {
+    autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % radios.length;
+      goToCard(currentIndex);
+    }, 3000);
+  }
+}
+
+// Stop auto slide
+function stopAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = null;
+}
+
+// User clicks indicator
+radios.forEach((radio, index) => {
+  radio.addEventListener('change', () => {
+    goToCard(index);
+    stopAutoSlide();
+    startAutoSlide();
+  });
+});
+
+// User swipes manually
+document.querySelector('.testimonial').addEventListener('scroll', () => {
+  stopAutoSlide();
+  startAutoSlide();
+});
+
+// ---- NEW: Only auto-slide when slider is visible ----
+const slider = document.querySelector('.testimonial');
+
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    // slider is on screen → start auto slide
+    startAutoSlide();
+  } else {
+    // slider off screen → stop auto slide
+    stopAutoSlide();
+  }
+}, { threshold: 0.5 });
+
+observer.observe(slider);
+

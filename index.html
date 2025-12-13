@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage Landing Page</title>
+    <title>Frontend Mentor | Manage Landing Page</title>
 
     <!--Tab Icon-->
     <link rel="icon" href="/images/favicon-32x32.png" type="image/png" />
@@ -17,60 +17,59 @@
     />
   </head>
   <body>
-    <div class="hero-container px-lg-3 px-xl-5">
-      <nav class="navbar navbar-expand-lg my-lg-2 mx-lg-5">
-        <div class="container d-flex p-3 m-3 my-lg-3 mx-lg-5">
-          <img src="/images/logo.svg" class="navbar-logo" alt="" />
-          <button class="border-0 p-0 bg-transparent d-lg-none" id="burgerBtn">
-            <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
-          </button>
-          <button class="border-0 d-none bg-transparent" id="closeBtn">
-            <img src="/images/icon-close.svg" alt="" />
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center align-items-center bg-white d-lg-flex"
-            id="navBarMenu"
+    <div class="hero-container px-xl-0">
+      <nav class="navbar navbar-expand-lg my-lg-2 mx-lg-5 m-4 py-2">
+        <img src="/images/logo.svg" class="navbar-logo" alt="" />
+        <button class="border-0 p-0 bg-transparent d-lg-none" id="burgerBtn">
+          <img src="/images/icon-hamburger.svg" class="border-0" alt="" />
+        </button>
+        <button class="border-0 d-none bg-transparent" id="closeBtn">
+          <img src="/images/icon-close.svg" alt="" />
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center align-items-center bg-white d-lg-flex"
+          id="navBarMenu"
+        >
+          <ul
+            class="navbar nav justify-content-center d-flex flex-column flex-lg-row fw-bold text-dark"
           >
-            <ul
-              class="navbar nav justify-content-center d-flex flex-column flex-lg-row fw-bold text-dark"
-            >
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Pricing</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Product</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">About us</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Careers</a>
-              </li>
-              <li class="nav-item p-1">
-                <a href="" class="nav-link">Community</a>
-              </li>
-            </ul>
-          </div>
-          <!--Button (desktop only) -->
-          <button
-            class="btn btn-danger rounded-5 px-4 py-2 fs-6 border-0 d-none d-lg-inline-block"
-          >
-            Get Started
-          </button>
+            <li class="nav-item p-1">
+              <a href="" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="" class="nav-link">Community</a>
+            </li>
+          </ul>
         </div>
+        <!--Button (desktop only) -->
+        <button
+          class="btn btn-danger rounded-5 px-4 py-2 fs-6 border-0 d-none d-lg-inline-block"
+        >
+          Get Started
+        </button>
       </nav>
 
       <div class="m-auto text-center position-relative w-100">
         <div class="container mx-lg-5 my-lg-4">
           <div class="row align-items-center px-3 py-3 py-xl-5">
             <div
-              class="col-12 col-lg-6 text-center text-lg-start hero-container pb-5 order-2 order-lg-1"
+              class="col-12 col-lg-6 text-center text-lg-start hero-container pb-5 order-2 order-lg-1 py-md-5"
             >
-              <h1 class="fw-bold lh-1 px-2 px-lg-4 home-title">
+              <h1 class="fw-bold lh-1 px-2 home-title">
                 Bring everyone together to build better products.
               </h1>
               <p
-                class="text-secondary lh-lg manage-description px-2 px-lg-4 mx-1 mt-lg-4 text-justify"
+                class="text-secondary lh-lg manage-description px-2 mx-1 mt-lg-4 text-justify text-center"
               >
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
@@ -93,7 +92,7 @@
               />
               <img
                 src="/images/illustration-intro.svg"
-                class="img-fluid illustration-intro"
+                class="illustration-intro"
                 alt="Illustration"
               />
             </div>
@@ -101,17 +100,17 @@
         </div>
       </div>
 
-      <div class="mt-1 text-start">
-        <div class="container my-5">
+      <div class="mt-1 text-start pb-lg-5">
+        <div class="container-fluid my-4 px-0 px-lg-5">
           <div class="row align-items-start">
             <div class="col-12 col-lg-6 text-start">
               <h1
-                class="fw-bold px-5 px-lg-5 pb-3 lh-base text-center text-lg-start"
+                class="fw-bold px-4 px-lg-5 pb-3 lh-base text-center text-lg-start title-manage"
               >
                 What’s different about Manage?
               </h1>
               <p
-                class="text-secondary px-4 px-lg-5 lh-base pb-5 text-lg-start manage-description"
+                class="text-secondary px-4 text-center px-lg-5 lh-base pb-5 manage-description"
               >
                 Manage provides all the functionality your team needs, without
                 the complexity. Our software is tailor-made for modern digital
@@ -119,14 +118,14 @@
               </p>
             </div>
 
-            <div class="col-12 col-lg-6">
-              <div class="mb-5">
-                <div class="position-relative">
+            <div class="col-12 col-lg-6 py-sm-5 p-lg-0 features-col my-lg-0">
+              <div class="mb-5 m-lg-0">
+                <div class="position-relative feature-header">
                   <span class="number-badge fw-bold">01</span>
-                  <p class="badge-title">Track company-wide progress</p>
+                  <span class="badge-title">Track company-wide progress</span>
                 </div>
                 <p
-                  class="text-secondary text-start mx-3 mx-lg-0 num-description"
+                  class="text-secondary text-start mx-4 my-2 mx-lg-0 num-description"
                 >
                   See how your day-to-day tasks fit into the wider vision. Go
                   from tracking progress at the milestone level all the way down
@@ -136,12 +135,12 @@
               </div>
 
               <div class="mb-5">
-                <div class="position-relative">
+                <div class="position-relative feature-header">
                   <span class="number-badge fw-bold">02</span>
-                  <p class="badge-title">Advanced built-in reports</p>
+                  <span class="badge-title">Advanced built-in reports</span>
                 </div>
                 <p
-                  class="text-secondary text-start mx-3 mx-lg-0 num-description"
+                  class="text-secondary text-start mx-4 my-2 mx-lg-0 num-description"
                 >
                   Set internal delivery estimates and track progress toward
                   company goals. Our customizable dashboard helps you build out
@@ -150,12 +149,14 @@
               </div>
 
               <div class="mb-3">
-                <div class="position-relative">
+                <div class="position-relative feature-header">
                   <span class="number-badge fw-bold">03</span>
-                  <p class="badge-title">Everything you need in one place</p>
+                  <span class="badge-title"
+                    >Everything you need in one place</span
+                  >
                 </div>
                 <p
-                  class="text-secondary text-start mx-3 mx-lg-0 num-description"
+                  class="text-secondary text-start mx-4 my-2 mx-lg-0 num-description"
                 >
                   Stop jumping from one service to another to communicate, store
                   files, track tasks, and share documents. Manage offers an
@@ -175,13 +176,18 @@
       <!-- Card Slider -->
       <div
         id="testimonialCarousel"
-        class="text-center mx-3 mt-lg-5 people m-lg-0 p-lg-0"
+        class="text-center mx-3 people m-lg-0 p-lg-0 mb-lg-5"
       >
+        <img
+          src="/images/bg-tablet-pattern.svg"
+          class="table-pattern-small"
+          alt=""
+        />
         <h1 class="title-testimonial">What they've said</h1>
         <div class="testimonial">
           <!-- Card 1 -->
 
-          <div class="card px-3 pb-5 mx-auto profile primeiro">
+          <div class="card px-3 pb-5 mx-auto profile primeiro" id="card1">
             <img
               src="/images/avatar-anisha.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -196,7 +202,7 @@
 
           <!-- Card 2 -->
 
-          <div class="card px-3 pb-5 mx-auto profile ali">
+          <div class="card px-3 pb-5 mx-auto profile ali" id="card2">
             <img
               src="/images/avatar-ali.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -211,7 +217,7 @@
 
           <!-- Card 3 -->
 
-          <div class="card px-3 pb-5 mx-auto profile richard">
+          <div class="card px-3 pb-5 mx-auto profile richard" id="card3">
             <img
               src="/images/avatar-richard.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -226,7 +232,7 @@
 
           <!-- Card 4 -->
 
-          <div class="card px-3 pb-5 mx-auto profile shanai">
+          <div class="card px-3 pb-5 mx-auto profile shanai" id="card4">
             <img
               src="/images/avatar-shanai.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -238,7 +244,8 @@
               being intrusive.”
             </p>
           </div>
-          <div class="card px-3 pb-5 mx-auto profile anisha">
+          <!-- Duplicate Card 1 -->
+          <div class="card px-3 pb-5 mx-auto profile anisha duplicate">
             <img
               src="/images/avatar-anisha.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -251,9 +258,9 @@
             </p>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Duplicate Card 2 -->
 
-          <div class="card px-3 pb-5 mx-auto profile ali">
+          <div class="card px-3 pb-5 mx-auto profile ali duplicate">
             <img
               src="/images/avatar-ali.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -266,9 +273,9 @@
             </p>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Duplicate Card 3 -->
 
-          <div class="card px-3 pb-5 mx-auto profile richard">
+          <div class="card px-3 pb-5 mx-auto profile richard duplicate">
             <img
               src="/images/avatar-richard.png"
               class="img-fluid img-testimonial mx-auto d-block"
@@ -280,35 +287,60 @@
               I talk to!”
             </p>
           </div>
+          <!-- Duplicate Card 4 -->
+          <div class="card px-3 pb-5 mx-auto profile shanai duplicate">
+            <img
+              src="/images/avatar-shanai.png"
+              class="img-fluid img-testimonial mx-auto d-block"
+            />
+            <h6 class="fw-bold pb-2">Shanai Gough</h6>
+            <p class="text-secondary">
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </div>
         </div>
-        <div class="indicators">
+        <div class="indicators d-lg-none">
           <input type="radio" name="btn-radio" id="radio1" />
           <input type="radio" name="btn-radio" id="radio2" />
           <input type="radio" name="btn-radio" id="radio3" />
           <input type="radio" name="btn-radio" id="radio4" />
         </div>
+        <div class="text-center mt-3 mb-5 mt-lg-5">
+          <button type="button" class="btn btn-danger rounded-5 px-4 py-2 fs-6">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid text-center d-flex flex-column flex-lg-row justify-content-between align-items-center mt-lg-5"
+      id="orangeBg"
+    >
+      <img
+        src="/images/bg-simplify-section-mobile.svg"
+        class="img-fluid bg-simplify-section-mobile d-lg-none"
+        alt=""
+      />
+      <img
+        src="/images/bg-simplify-section-desktop.svg"
+        alt=""
+        class="bg-simplify-section-desktop position-absolute top-0 start-0 h-100 w-100 d-none d-lg-block"
+      />
+
+      <h1 class="fw-medium mt-4 lh-sm simplify ms-lg-3">
+        Simplify how your team works today.
+      </h1>
+      <div>
         <button
           type="button"
-          class="btn btn-danger rounded-5 px-4 py-2 mt-3 mb-5 fs-6"
+          class="btn btn-white rounded-5 px-4 mb-4 mt-3 py-2 fs-6 fw-bold"
         >
           Get Started
         </button>
       </div>
-    </div>
-
-    <div class="container-fluid text-center" id="orangeBg">
-      <img
-        src="/images/bg-simplify-section-mobile.svg"
-        class="img-fluid bg-simplify-section-mobile"
-        alt=""
-      />
-      <h1 class="fw-medium mt-4 lh-sm">Simplify how your team works today.</h1>
-      <button
-        type="button"
-        class="btn btn-white rounded-5 px-4 mb-4 mt-3 py-2 fs-6 fw-bold"
-      >
-        Get Started
-      </button>
     </div>
     <footer>
       <div class="">

@@ -85,6 +85,9 @@ box-shadow: 0 4px 10px hsla(12, 88%, 59%, 0.4);
 z-index: 2;
 position: relative;
 }
+.btn-danger:hover{
+background-color: hsl(13, 80%, 79%);
+}
 .btn-white{
 background-color: white;
 border: none;
@@ -395,6 +398,7 @@ position: relative;
 .copyright{
 margin-top: -50px!important;
 }
+
 }
 
 
@@ -457,4 +461,10 @@ footer .nav-link:hover {
 
 nav li a:hover{
 color: gray !important;;
+}
+
+#emailError{
+ margin-left: -10px !important;;
+
+
 }

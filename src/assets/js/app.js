@@ -89,26 +89,18 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(slider);
 
 
+const form = document.getElementById('emailForm');
+const emailInput = document.getElementById('emailInput');
+const emailError = document.getElementById('emailError');
 
-//for validation of email
-  const emailInput = document.getElementById("emailInput");
-  const goBtn = document.getElementById("goBtn");
-  const emailError = document.getElementById("emailError");
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
 
-  goBtn.addEventListener("click", function () {
-    const emailValue = emailInput.value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailPattern.test(emailValue)) {
-      emailError.classList.remove("d-none");
-      emailInput.classList.add("error");
-    } else {
-      emailError.classList.add("d-none");
-      emailInput.classList.remove("error");
-
-      // Optional success action
-      alert("Email submitted successfully!");
-      emailInput.value = "";
-    }
-  });
-
+  if (!emailInput.checkValidity()) {
+    emailError.classList.remove('d-none'); // show error
+    emailInput.classList.add('border', 'border-danger'); 
+  } else {
+    emailError.classList.add('d-none'); // hide error
+    emailInput.classList.remove('border', 'border-danger'); // remove border if valid
+  }
+});
